@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Z DashBoard</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="bg-[#F4F7FF]">
+		<main class="container my-4 mx-auto poppins-regular">
+			<!-- top navbar start -->
+			<header
+				class="bg-[#FFFFFF] p-3 my-2 flex items-center justify-between rounded-lg"
+			>
+				<div class="header__logo flex items-center">
+					<img class="scale-75" src="./assets/logo.png" alt="" />
+					<h1 class="text-2xl">Dash <span class="font-bold"> Board </span></h1>
+				</div>
+				<div class="header__right flex">
+					<button
+						class="flex items-center text-lg font-bold bg-[#F4F7FF] py-2 px-4 rounded-full"
+					>
+						<img class="scale-75" src="./assets/checkbox.png" alt="checkbox" />
+						23
+					</button>
+					<div class="scale-75">
+						<img
+							class="p-2 bg-[#F4F7FF] rounded-full"
+							src="./assets/theme-btn.png"
+							alt=""
+						/>
+					</div>
+				</div>
+			</header>
+			<!-- top navbar end -->
+
+			<section class="hero flex gap-4 w-full bg-white">
+				<div class="hero__left w-3/4">
+					<!-- main three button start-->
+					<div class="actions flex p-2 gap-4">
+						<!-- first button -->
+						<div
+							class="flex justify-center items-center gap-4 p-4 bg-pr rounded-lg"
+						>
+							<div>
+								<img class="scale-50" src="./assets/checkbox.png" alt="" />
+							</div>
+							<div>
+								<p class="text-xs text-slate-600">Task Assigned</p>
+								<p class="font-bold text-xl">05</p>
+							</div>
+						</div>
+
+						<!-- second button -->
+						<div
+							class="flex flex-1 items-center px-4 rounded-lg bg-linear-to-r from-[#3752FD] to-[#9BA8F8] bg-red-100"
+						>
+							<div>
+								<img class="scale-75" src="./assets/board.png" alt="img" />
+							</div>
+							<div>
+								<p class="text-white">Discover Something</p>
+								<p class="text-white">New Today!</p>
+							</div>
+						</div>
+						<!-- third button -->
+						<div
+							class="flex justify-center items-center gap-4 p-4 pl-8 bg-pr rounded-lg"
+						>
+							<div>
+								<img
+									class="scale-75"
+									src="./assets/calender.png"
+									alt="calender"
+								/>
+							</div>
+							<div>
+								<p>Wed ,</p>
+								<p class="font-bold">Jul 28 2025</p>
+							</div>
+						</div>
+					</div>
+					<!-- main three button end-->
+
+					<!-- grid cards start-->
+					<div class="gridContainer p-2 grid grid-cols-3 gap-6 rounded-lg">
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">
+								ShopEase
+							</button>
+							<p>Fix Mobile Button Issue</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">
+								CloudSync
+							</button>
+							<p>Add Dark Mode</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">
+								SwiftPay
+							</button>
+							<p>Optimize Home page</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">Meta</button>
+							<p>Add new emoji</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">
+								Google LLC
+							</button>
+							<p>Integrate OpenAI API</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+						<div
+							class="box bg-pr rounded-lg px-3 py-4 flex flex-col justify-start items-start gap-2"
+						>
+							<button class="bg-white px-4 py-2 text-xs rounded">
+								Glassdoor
+							</button>
+							<p>Improve Job searching</p>
+							<p
+								class="text-xs text-gray-500 text-ellipsis text-wrap overflow-hidden p-2 bg-white rounded"
+							>
+								Debug using Chrome DevTools, check for overlapping elements, and
+								ensure onClick works properly
+							</p>
+
+							<div
+								class="flex items-center justify-between w-full text-xs border-t border-dashed border-t-slate-300"
+							>
+								<div class="mt-3">
+									<p>Deadline</p>
+									<p class="font-semibold">21 March 2025</p>
+								</div>
+								<div>
+									<button class="btn-primary">Completed</button>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- grid cards end-->
+				</div>
+
+				<!-- side bar section start-->
+				<div
+					class="hero__right w-1/4 border flex flex-col items-center justify-start p-4 gap-4"
+				>
+					<div class="flex gap-2">
+						<div>
+							<img class="scale-75" src="./assets/activity.png" alt="" />
+						</div>
+						<div>
+							<p>Activity Log</p>
+						</div>
+					</div>
+					<div>
+						<button class="btn-primary">Clear History</button>
+					</div>
+
+					<!-- History list items start-->
+
+					<div class="list__items">
+						<div class="list text-xs text-gray-700 p-4 my-4 rounded-lg bg-pr">
+							<p>
+								You have Complete The Task Add Dark Mode at
+								<span>12:48:15 PM</span>
+							</p>
+						</div>
+
+						<div class="item text-xs text-gray-700 p-4 my-4 rounded-lg bg-pr">
+							<p>
+								You have Complete The Task Add Dark Mode at
+								<span>12:48:15 PM</span>
+							</p>
+						</div>
+					</div>
+					<!-- History list items end -->
+				</div>
+			</section>
+			<!-- side bar section end-->
+		</main>
+	</body>
+</html>
