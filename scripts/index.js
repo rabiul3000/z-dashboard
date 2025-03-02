@@ -48,7 +48,7 @@ function createAndAddDiv(currentTime, title) {
 	return list;
 }
 
-let disabledBtnCount = 0;
+let totalDisabledButton = 0;
 for (let i = 0; i < completeBtn.length; i++) {
 	completeBtn[i].addEventListener('click', function () {
 		alert('Board updated successfully');
@@ -57,8 +57,8 @@ for (let i = 0; i < completeBtn.length; i++) {
 		let list = createAndAddDiv(new Date(), titles[i].textContent);
 		listItems.append(list);
 		this.setAttribute('disabled', 'true');
-		disabledBtnCount++;
-		if (disabledBtnCount === completeBtn.length) {
+		totalDisabledButton++;
+		if (totalDisabledButton === completeBtn.length) {
 			alert('Congrates!!! You have completed all the current task');
 		}
 	});

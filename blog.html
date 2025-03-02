@@ -1,11 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1 class="text-2xl">This is blog page</h1>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Z DashBoard</title>
+		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+	</head>
+	<body class="bg-[#F4F7FF]">
+		<main class="container my-0 mx-auto">
+			<nav
+				class="px-2 py-2 bg-white shadow-sm flex justify-between items-center"
+			>
+				<button class="text-lg flex items-center">
+					<img class="scale-50" src="./assets/logo.png" alt="" />
+					<p>Dev<span class="font-bold">Board </span></p>
+				</button>
+
+				<button
+					class="text-xs px-8 py-3 hover:opacity-80 cursor-pointer font-bold rounded-lg bg-[#3752fd] text-white"
+					onclick="window.location.href='./index.html' "
+				>
+					Back To Desk
+				</button>
+			</nav>
+			<h1 class="text-lg font-bold text-center mb-4 mt-2">Blogs</h1>
+
+			<div class="qaboard rounded-lg">
+				<div class="my-4 bg-white rounded-lg">
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-1: What are the defferent ways to select an element in the
+						DOM
+					</p>
+					<p class="p-2 text-gray-500">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+						placeat odio dolore possimus velit, nisi quas facilis quos eos nam.
+					</p>
+				</div>
+
+				<div class="my-4 bg-white">
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-1: What are the defferent ways to select an element in the
+						DOM
+					</p>
+					<p class="p-2 text-gray-500">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum
+						placeat odio dolore possimus velit, nisi quas facilis quos eos nam.
+					</p>
+				</div>
+			</div>
+		</main>
+	</body>
 </html>
