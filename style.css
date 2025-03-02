@@ -32,3 +32,16 @@
 	cursor: pointer;
 	opacity: 0.2;
 }
+.btn {
+	cursor: pointer;
+}
+
+.box:hover {
+	background-color: rgb(226, 242, 252);
+	transition: background-color 0.5s ease-in-out;
+	cursor: pointer;
+}
+
+.completed:disabled {
+	opacity: 0.2;
+}
