@@ -4,6 +4,8 @@ const checkbox = document.getElementById('checkbox');
 const listItems = document.getElementById('list__items');
 const historyReset = document.getElementById('history-reset');
 const currentDate = document.getElementById('date');
+const body = document.getElementById('body');
+const changeBgBtn = document.getElementById('changeBgBtn');
 const titles = document.getElementsByClassName('title');
 
 const date = new Date();
@@ -19,6 +21,13 @@ currentDate.textContent = dateString;
 
 historyReset.addEventListener('click', function () {
 	listItems.innerHTML = '';
+});
+
+changeBgBtn.addEventListener('click', function () {
+	let colors = ['steelblue', 'limegreen', 'orange', 'pink', 'purple', 'teal'];
+	let randomNumber = Math.round(Math.random() * 6);
+	console.log(randomNumber);
+	body.style.backgroundColor = colors[randomNumber];
 });
 
 function createAndAddDiv(currentTime, title) {
@@ -49,7 +58,6 @@ for (let i = 0; i < completeBtn.length; i++) {
 		listItems.append(list);
 		this.setAttribute('disabled', 'true');
 		disabledBtnCount++;
-		console.log(disabledBtnCount, completeBtn.length);
 		if (disabledBtnCount === completeBtn.length) {
 			alert('Congrates!!! You have completed all the current task');
 		}

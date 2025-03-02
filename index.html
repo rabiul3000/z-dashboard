@@ -7,7 +7,7 @@
 		<title>Z DashBoard</title>
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	</head>
-	<body class="bg-[#F4F7FF]">
+	<body class="bg-[#F4F7FF]" id="body">
 		<main class="container my-4 mx-auto poppins-regular">
 			<!-- top navbar start -->
 			<header
@@ -24,12 +24,14 @@
 						<img class="scale-75" src="./assets/checkbox.png" alt="checkbox" />
 						<p id="checkbox">23</p>
 					</div>
-					<div class="scale-75">
-						<img
-							class="p-2 bg-[#F4F7FF] rounded-full"
-							src="./assets/theme-btn.png"
-							alt=""
-						/>
+					<div class="scale-50">
+						<button class="cursor-pointer active:bg-blue-400 rounded-2xl" id="changeBgBtn">
+							<img
+								class="p-2 bg-[#F4F7FF] rounded-full"
+								src="./assets/theme-btn.png"
+								alt=""
+							/>
+						</button>
 					</div>
 				</div>
 			</header>
@@ -257,14 +259,14 @@
 						</div>
 					</div>
 					<div>
-						<button class="btn-primary" id="history-reset">Clear History</button>
+						<button class="btn-primary" id="history-reset">
+							Clear History
+						</button>
 					</div>
 					<div class="w-full border-b border-gray-200"></div>
 					<!-- History list items start-->
 
-					<div class="list__items" id="list__items">
-						
-					</div>
+					<div class="list__items" id="list__items"></div>
 					<!-- History list items end -->
 				</div>
 			</section>
