@@ -10,7 +10,7 @@ const titles = document.getElementsByClassName('title');
 const secondBtn = document.getElementById('secondBtn');
 
 secondBtn.addEventListener('click', function () {
-	window.location.pathname = 'https://rabiul3000.github.io/z-dashboard/blog.html';
+	window.location.pathname = 'blog.html';
 });
 
 const date = new Date();
