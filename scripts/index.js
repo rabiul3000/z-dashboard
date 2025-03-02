@@ -7,9 +7,21 @@ const currentDate = document.getElementById('date');
 const body = document.getElementById('body');
 const changeBgBtn = document.getElementById('changeBgBtn');
 const titles = document.getElementsByClassName('title');
+const redirectingBtn = document.getElementById('secondBtn');
+const redirectingToIndex = document.getElementById('redirectingToIndex');
+
+
+
+redirectingToIndex.addEventListener('click', function() {
+	window.location.href = './index.html'
+})
+
+redirectingBtn.addEventListener('click', function() {
+	window.location.href = './blog.html'
+})
+
 
 const date = new Date();
-
 const dateString = date.toLocaleDateString('en-us', {
 	day: 'numeric',
 	weekday: 'short',
