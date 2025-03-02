@@ -8,7 +8,7 @@
 		<script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 	</head>
 	<body class="bg-[#F4F7FF]" id="body">
-		<main class="container my-4 mx-auto poppins-regular">
+		<main id="home" class="container my-4 mx-auto poppins-regular">
 			<!-- top navbar start -->
 			<header
 				class="bg-[#FFFFFF] p-3 my-2 flex items-center justify-between rounded-lg"
@@ -275,6 +275,100 @@
 				</div>
 			</section>
 			<!-- side bar section end-->
+		</main>
+		<main class="container my-0 mx-auto" id="blogs">
+			<nav
+				class="px-2 py-2 bg-white shadow-sm flex justify-between items-center"
+			>
+				<button class="text-lg flex items-center">
+					<img class="scale-50" src="./assets/logo.png" alt="" />
+					<p>Dev<span class="font-bold">Board </span></p>
+				</button>
+
+				<button id="redirectToHome"
+					class="text-xs px-8 py-3 hover:opacity-80 cursor-pointer font-bold rounded-lg bg-[#3752fd] text-white"
+				>
+					Back To Desk
+				</button>
+			</nav>
+			<h1 class="text-lg font-bold text-center mb-4 mt-2">Blogs</h1>
+
+			<div class="qaboard rounded-lg my-8">
+				<!-- first question -->
+				<div class="my-4 bg-white rounded-lg">
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-1: What are the defferent ways to select an element in the
+						DOM.
+					</p>
+					<p class="p-2 text-gray-500">
+						There are several ways to select an element in the DOM. With id,
+						with className, tag name etc.
+					</p>
+				</div>
+
+				<div class="my-4 bg-white">
+					<!-- second question -->
+
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-2: What is the difference between innerHTML, innerText, and
+						textContent ?
+					</p>
+					<p class="p-2 text-gray-500">
+						With innerHTML we can get all the html tag attributes even spaces.
+						With innerText we can have only texts inside of a tag.Excluding html
+						tags name spaces etc
+					</p>
+				</div>
+				<div class="my-4 bg-white">
+					<!-- third question -->
+
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-3: What is event delegation in the DOM?
+					</p>
+					<p class="p-2 text-gray-500">
+						Event delegation is where the event get handled by its parents
+						element instead of directly on the current element.
+					</p>
+				</div>
+				<div class="my-4 bg-white">
+					<!-- four question -->
+
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-4:What is event bubbling in the DOM?
+					</p>
+					<p class="p-2 text-gray-500">
+						Event bubbling is where event start from current element to its top
+						most parent element just like bubbling water. like current tag
+						element to document which is the top ancestor.
+					</p>
+				</div>
+
+				<div class="my-4 bg-white">
+					<!-- fifth question -->
+
+					<p
+						class="font-bold border-b border-dashed border-gray-300 p-2 rounded-lg"
+					>
+						Quesion-5: How do you create, add, and remove elements using
+						JavaScript?
+					</p>
+					<p class="p-2 text-gray-500">
+						Firstly we have to create the element with document.createElement().
+						Then add all the text and html inside of it. And then attach the
+						newly created element to the the dom with .append method. We can
+						also attach with .nodeChild method which will work as a child
+						element.
+					</p>
+				</div>
+			</div>
 		</main>
 
 		<!-- scripts -->

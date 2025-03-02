@@ -8,9 +8,20 @@ const body = document.getElementById('body');
 const changeBgBtn = document.getElementById('changeBgBtn');
 const titles = document.getElementsByClassName('title');
 const secondBtn = document.getElementById('secondBtn');
+const blogs = document.getElementById('blogs');
+const home = document.getElementById('home');
+const redirectToHome = document.getElementById('redirectToHome');
+
+blogs.style.display = 'none';
 
 secondBtn.addEventListener('click', function () {
-	window.location.href = './blog.html';
+	home.style.display = 'none';
+	blogs.style.display = 'block';
+});
+
+redirectToHome.addEventListener('click', function () {
+	home.style.display = 'block';
+	blogs.style.display = 'none';
 });
 
 const date = new Date();
